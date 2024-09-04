@@ -1,38 +1,77 @@
+* {
+    margin: 0;
+}
+
+body {
+    text-align: center;
+}
+
 .App {
-  text-align: center;
+    height: 30vh;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addtask {
+    background-color: rgb(83, 83, 255);
+    height: 40vh;
+
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addtask input, button {
+    margin-top: 30px;
+
+    height: 5vh;
+    width: 10vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addtask input {
+    width: 30%;
+    height: 15%;
+    border: none;
+    border-radius: 10px 0 0 10px;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.addtask button {
+    border: none;
+    height: 15.6%;
+    /* border-left: black; */
+    border-radius: 0 10px 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addtask button {
+    border: none;
+    /* border-left: black; */
+    border-radius: 0 10px 10px 0;
+}
+
+.Tasks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    
+    
+
+}
+.Tasks button,.Tasks h1{
+    margin: auto 10px;
+}
+.Tasks button {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+
 }
